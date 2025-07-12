@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testosterdome | Unleash Your Inner Champion</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      color: #f1f1f1;
+      background-color: #1e1b2e;
+      scroll-behavior: smooth;
+    }
+
+    .hero {
+      background: linear-gradient(
+          rgba(30, 27, 46, 0.6),
+          rgba(30, 27, 46, 0.6)
+        ),
+        url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?fit=crop&w=1600&q=80') center/cover no-repeat;
+      background-blend-mode: overlay;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ff7f50;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+      color: #e2d7f2;
+    }
+
+    .cta-button {
+      background: linear-gradient(45deg, #ff7f50, #f04e98);
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: linear-gradient(45deg, #f04e98, #ff7f50);
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .value-prop {
+      background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+    }
+
+    .value-prop h2,
+    .community-group h2,
+    .bible-study h2,
+    .signup h3 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+
+    .value-prop ul {
+      list-style: none;
+      font-size: 1.2rem;
+      line-height: 2;
+      color: #f1f1f1;
+    }
+
+    .community-group {
+      background: #2c204e;
+    }
+
+    .community-group form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .community-group input,
+    .community-group textarea,
+    .signup input[type="email"] {
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      width: 100%;
+      color: #333;
+    }
+
+    .community-group button,
+    .signup button {
+      padding: 12px 25px;
+      font-size: 1rem;
+      background: #ff7f50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .community-group button:hover,
+    .signup button:hover {
+      background: #f04e98;
+    }
+
+    .bible-study {
+      background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+      color: #f1f1f1;
+    }
+
+    .bible-study p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #f1f1f1;
+    }
+
+    .signup {
+      background: #2c204e;
+    }
+
+    .social {
+      background: #1e1b2e;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .social a {
+      color: #ff7f50;
+      margin: 0 15px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social a:hover {
+      color: #f04e98;
+    }
+
+    footer {
+      background: #0e0b1f;
+      color: #777;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>Testosterdome</h1>
+    <p>Unleash Your Inner Champion. Join a community built for strength, faith, and transformation.</p>
+    <a href="#community-group" class="cta-button">Join the Community</a>
+  </section>
+
+  <section class="value-prop">
+    <h2>Why Testosterdome?</h2>
+    <ul>
+      <li>Elite Training Programs</li>
+      <li>Community Challenges</li>
+      <li>Nutrition & Recovery Guidance</li>
+      <li>Events & Competitions</li>
+    </ul>
+  </section>
+
+  <section class="community-group" id="community-group">
+    <h2>Community Group Registration</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Phone Number (optional)" />
+      <textarea placeholder="Tell us why you want to join the community group" rows="4"></textarea>
+      <button type="submit">Register Now</button>
+    </form>
+  </section>
+
+  <section class="bible-study">
+    <h2>This Week's Bible Study</h2>
+    <p>
+      <strong>Scripture:</strong> Romans 12:1-2<br/>
+      <strong>Focus:</strong> Living as a living sacrifice and transforming our minds.<br/><br/>
+      <strong>Guideline:</strong><br/>
+      - Read Romans 12:1-2 slowly.<br/>
+      - Reflect on how your daily choices align with God’s will.<br/>
+      - Journal one area of your life you wish to surrender.<br/>
+      - Pray for strength to transform and renew your mind.<br/><br/>
+      Join us Wednesday evening at 7 PM for group discussion via Zoom!
+    </p>
+  </section>
+
+  <section class="signup" id="signup">
+    <h3>Stay Updated</h3>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Sign Me Up</button>
+    </form>
+  </section>
+
+  <section class="social">
+    <a href="#">Instagram</a>
+    <a href="#">TikTok</a>
+    <a href="#">YouTube</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Testosterdome. All rights reserved.
+  </footer>
+</body>
+</html>
